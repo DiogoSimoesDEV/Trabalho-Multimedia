@@ -1,0 +1,136 @@
+/* Componentes — botões, cartões, tabelas e listas */
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: var(--color-brand);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--color-brand);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--color-brand-dark);
+  border-color: var(--color-brand-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-brand);
+}
+
+.btn-ghost:hover {
+  background: var(--color-brand);
+  color: #ffffff;
+}
+
+.cards,
+.values-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card,
+.values-list li {
+  margin: 0;
+  padding: 14px 16px;
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+.section-alt .card {
+  background-color: var(--color-bg);
+}
+
+.card:hover,
+.values-list li:hover {
+  border-color: var(--color-brand);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.card img {
+  margin-bottom: 12px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.schedule-list {
+  padding-left: 20px;
+  margin: 0 0 10px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pricing-table th {
+  background-color: var(--color-text);
+  color: #ffffff;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: rgba(230, 57, 70, 0.06);
+}
+
+a[target="_blank"] {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+  .cards,
+  .values-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-table {
+    font-size: 0.9rem;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 10px 8px;
+  }
+}

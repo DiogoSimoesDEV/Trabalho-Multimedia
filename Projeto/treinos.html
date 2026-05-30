@@ -1,141 +1,164 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-PT">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GymFit — Treinos</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <p><a href="index.html">GymFit</a></p>
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="treinos.html" aria-current="page">Treinos</a></li>
-          <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">GymFit</a>
+        <nav aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="treinos.html" aria-current="page">Treinos</a></li>
+            <li><a href="treino-hiit.html">Treino HIIT</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h1>Treinos sugeridos</h1>
-      <p>
-        Planos para fazer no ginásio ou em casa. Respeita o tempo de descanso
-        entre séries (cerca de 60 a 90 segundos) e aquece 5 minutos antes de
-        começar.
-      </p>
-
-      <section>
-        <h2>Treino de força — pernas</h2>
-        <article>
-          <h3>Agachamento</h3>
+      <section class="page-header">
+        <div class="container">
+          <h1>Treinos sugeridos</h1>
           <p>
-            Pés à largura dos ombros, costas retas e joelhos alinhados com os
-            pés. Desce até as coxas ficarem paralelas ao chão e sobe empurrando
-            com os calcanhares.
+            Planos para fazer no ginásio ou em casa. Aquece 5 minutos antes de
+            começar e respeita o descanso entre séries.
           </p>
-          <ul>
-            <li><strong>Repetições:</strong> 3 séries de 12 repetições</li>
-            <li><strong>Tempo ideal:</strong> cerca de 8 a 10 minutos (com descanso)</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Afundo (lunge)</h3>
-          <p>
-            Dá um passo à frente, flexiona os dois joelhos até o de trás quase
-            tocar o chão e volta à posição inicial. Alterna a perna em cada
-            repetição ou faz todas de um lado e depois do outro.
-          </p>
-          <ul>
-            <li><strong>Repetições:</strong> 3 séries de 10 repetições por perna</li>
-            <li><strong>Tempo ideal:</strong> cerca de 10 minutos</li>
-          </ul>
-        </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Treino de força — tronco e braços</h2>
-        <article>
-          <h3>Flexões</h3>
-          <p>
-            Mãos à largura dos ombros, corpo alinhado da cabeça aos pés. Desce
-            o peito em direção ao chão e empurra para cima. Se for difícil,
-            apoia os joelhos no chão.
-          </p>
-          <ul>
-            <li><strong>Repetições:</strong> 3 séries de 8 a 12 repetições</li>
-            <li><strong>Tempo ideal:</strong> cerca de 7 minutos</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Prancha abdominal</h3>
-          <p>
-            Apoia os antebraços e as pontas dos pés no chão, barriga contraída
-            e glúteos firmes. Mantém o corpo reto sem deixar a anca cair.
-          </p>
-          <ul>
-            <li><strong>Repetições:</strong> 3 séries de 30 a 45 segundos</li>
-            <li><strong>Tempo ideal:</strong> cerca de 5 minutos (com descanso entre séries)</li>
-          </ul>
-        </article>
+      <section class="section">
+        <div class="container split">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&h=350&fit=crop"
+              alt="Pessoa a fazer agachamento com barra no ginásio"
+              width="500"
+              height="350"
+            />
+          </figure>
+          <div>
+            <h2>Treino de força — pernas</h2>
+            <article class="card">
+              <h3>Agachamento</h3>
+              <p>
+                Pés à largura dos ombros, costas retas e joelhos alinhados com
+                os pés. Desce até as coxas ficarem paralelas ao chão.
+              </p>
+              <ul class="schedule-list">
+                <li><strong>Séries:</strong> 3 × 12 repetições</li>
+                <li><strong>Descanso:</strong> 60–90 segundos</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Afundo</h3>
+              <p>
+                Dá um passo à frente, flexiona os dois joelhos e volta à
+                posição inicial. Alterna a perna em cada repetição.
+              </p>
+              <ul class="schedule-list">
+                <li><strong>Séries:</strong> 3 × 10 repetições por perna</li>
+                <li><strong>Descanso:</strong> 60 segundos</li>
+              </ul>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Treino cardiovascular — HIIT</h2>
-        <article>
-          <h3>Burpee</h3>
-          <p>
-            Em pé, agacha e coloca as mãos no chão. Salta os pés para trás em
-            posição de flexão, faz uma flexão (opcional), salta os pés de volta,
-            levanta-te e dá um salto com os braços no ar.
-          </p>
-          <ul>
-            <li><strong>Repetições:</strong> 4 séries de 8 repetições</li>
-            <li><strong>Tempo ideal:</strong> cerca de 12 minutos (20 s de esforço, 40 s de descanso entre repetições se preferires intervalos)</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Corrida no lugar com joelhos altos</h3>
-          <p>
-            Corre no mesmo sítio elevando os joelhos até à altura da anca,
-            braços a acompanhar o ritmo. Mantém o tronco ereto e pés ligeiros.
-          </p>
-          <ul>
-            <li><strong>Repetições:</strong> 4 séries de 40 segundos</li>
-            <li><strong>Tempo ideal:</strong> cerca de 8 minutos (descansa 20 segundos entre séries)</li>
-          </ul>
-        </article>
+      <section class="section section-alt">
+        <div class="container">
+          <h2>Treino de força — tronco e braços</h2>
+          <div class="cards">
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop"
+                alt="Homem a fazer flexões no chão"
+                width="300"
+                height="200"
+              />
+              <h3>Flexões</h3>
+              <p>
+                Mãos à largura dos ombros, corpo alinhado. Se for difícil,
+                apoia os joelhos no chão.
+              </p>
+              <ul class="schedule-list">
+                <li>3 séries de 8 a 12 repetições</li>
+              </ul>
+            </article>
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=300&h=200&fit=crop"
+                alt="Mulher a fazer prancha abdominal"
+                width="300"
+                height="200"
+              />
+              <h3>Prancha abdominal</h3>
+              <p>
+                Antebraços e pontas dos pés no chão, barriga contraída e
+                corpo reto durante todo o exercício.
+              </p>
+              <ul class="schedule-list">
+                <li>3 séries de 30 a 45 segundos</li>
+              </ul>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Treino completo — circuito</h2>
-        <p>
-          Executa os exercícios pela ordem, sem pausa entre eles. Descansa 2
-          minutos no fim e repete o circuito 2 vezes.
-        </p>
-        <ol>
-          <li>Agachamento — 15 repetições</li>
-          <li>Flexões — 10 repetições</li>
-          <li>Prancha — 30 segundos</li>
-          <li>Burpee — 6 repetições</li>
-          <li>Corrida no lugar — 30 segundos</li>
-        </ol>
-        <ul>
-          <li><strong>Repetições:</strong> 3 voltas ao circuito</li>
-          <li><strong>Tempo ideal:</strong> 25 a 30 minutos no total</li>
-        </ul>
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2>Treino cardiovascular — HIIT</h2>
+            <p>
+              Treino intenso de curta duração, ideal para queimar calorias e
+              melhorar a resistência. Consulta o guia completo com dicas e
+              variantes.
+            </p>
+            <a class="btn" href="treino-hiit.html">Ver guia completo de HIIT</a>
+          </div>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&h=350&fit=crop"
+              alt="Grupo de pessoas a fazer treino HIIT em aula"
+              width="500"
+              height="350"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2>Circuito completo</h2>
+          <p>
+            Executa os exercícios pela ordem, sem pausa entre eles. Descansa 2
+            minutos no fim e repete o circuito 3 vezes.
+          </p>
+          <ol class="schedule-list">
+            <li>Agachamento — 15 repetições</li>
+            <li>Flexões — 10 repetições</li>
+            <li>Prancha — 30 segundos</li>
+            <li>Burpee — 6 repetições</li>
+            <li>Corrida estática — 30 segundos</li>
+          </ol>
+          <p class="muted">Duração total estimada: 25 a 30 minutos.</p>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p><strong>GymFit</strong> — Rua do Fitness, 42, Lisboa</p>
-      <p>Email: <a href="mailto:info@gymfit.pt">info@gymfit.pt</a> · Tel: 213 456 789</p>
-      <p>© 2026 GymFit. Todos os direitos reservados.</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p><strong>GymFit</strong> — Rua do Fitness, 42, Lisboa</p>
+        <p>E-mail: <a href="mailto:info@gymfit.pt">info@gymfit.pt</a> · Tel: 213 456 789</p>
+        <p class="muted">© 2026 GymFit. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
